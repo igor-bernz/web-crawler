@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.likhina.WebCrawler'
+        )
+    }
+}
+
+group 'com.likhina'
+version '1.0-0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.jsoup:jsoup:1.12.2'
+    compile 'org.slf4j:slf4j-api:1.7.24'
+    compile 'org.slf4j:slf4j-simple:1.7.24'
+    implementation 'com.google.guava:guava:11.0.2'
+
+    testCompile 'junit:junit:4.12'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
+}
