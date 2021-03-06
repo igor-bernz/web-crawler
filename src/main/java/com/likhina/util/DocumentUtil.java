@@ -15,7 +15,7 @@ import java.util.Optional;
 public final class DocumentUtil {
     private static Logger LOGGER = LoggerFactory.getLogger(DocumentUtil.class);
 
-    private static String CHARSET_NAME = "utf8";
+    private static final String CHARSET_NAME = "utf8";
 
     private DocumentUtil() {
     }
